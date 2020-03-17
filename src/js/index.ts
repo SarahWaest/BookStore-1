@@ -1,12 +1,14 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+import Axios, {
+    AxiosResponse,
+    AxiosError
+} from "../../node_modules/axios/index";
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-let user: Person = { firstName: "John", lastName: "Doe" };
+let BaseUri: string = "http://anbo-bookstorerest.azurewebsites.net/api/"
 
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+
+
+
+
+
+
+let element: HTMLDivElement = <HTMLDivElement> document.getElementById("table_content");
