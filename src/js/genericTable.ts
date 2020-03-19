@@ -2,9 +2,9 @@ export function json2table100(json: any): string {
     let cols: string[] = Object.keys(json[0]);
     let headerRow: string = "";
     let bodyRows: string = "";
-    cols.forEach((colName: string) => {
-        headerRow += "<th>" + capitalizeFirstLetter(colName) + "</th>"
-    });
+    // cols.forEach((colName: string) => {
+    //     // headerRow += "<th>" + capitalizeFirstLetter(colName) + "</th>"
+    // });
     json.forEach((row: any) => {
         bodyRows += "<tr>";
         // loop over object properties and create cells
